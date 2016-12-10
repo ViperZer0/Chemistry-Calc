@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1474847627 source:c:\users\elian\documents\chemistry calc\chemistry calculator\main.c
+	<stdio.h>
+	"periodic.h"
+	<stdlib.h>
+
+1474847542 c:\users\elian\documents\chemistry calc\chemistry calculator\periodic.h
+	<stdio.h>
+
+1457224635 c:\users\elian\documents\chemistry calc\chemistry calculator\createtable.c
+	"periodic.h"
+	<stdio.h>
+
+1465625227 source:c:\users\elian\documents\chemistry calc\chemistry calculator\periodic.c
+	"periodic.h"
+	<stdio.h>
+	<stdlib.h>
+
+1457398185 c:\users\elian\documents\chemistry calc\chemistry calculator\displaydata.c
+	"simpio.h"
+	"periodic.h"
+	<stdio.h>
+
+1470874918 source:c:\users\elian\documents\chemistry calc\chemistry calculator\displaydata.c
+	"periodic.h"
+
+1474847542 source:c:\users\elian\documents\chemistry calc\chemistry calculator\periodic.h
+	<stdio.h>
+
+1470006583 source:c:\users\elian\documents\chemistry calc\chemistry calculator\createtable.c
+	"periodic.h"
+	<stdio.h>
+	<stdlib.h>
+
+1465866119 source:c:\users\elian\documents\chemistry calc\chemistry calculator\definput.c
+	"periodic.h"
+	<stdio.h>
+
+1467263734 source:c:\users\elian\documents\chemistry calc\chemistry calculator\searchtable.c
+	"periodic.h"
+
+1465873861 source:c:\users\elian\documents\chemistry calc\chemistry calculator\strin.c
+
+1465886235 source:c:\users\elian\documents\chemistry calc\chemistry calculator\strsep.c
+	<string.h>
+
+1467249562 source:c:\users\elian\documents\chemistry calc\chemistry calculator\conlow.c
+
+1474844904 source:c:\users\elian\documents\chemistry calc\chemistry calculator\parseequation.c
+	<string.h>
+	"periodic.h"
+
+1470004580 source:c:\users\elian\documents\chemistry calc\chemistry calculator\handydandy.c
+	"periodic.h"
+
+1474847292 source:c:\users\elian\documents\chemistry calc\chemistry calculator\rowop.c
+	"periodic.h"
+
+1474854592 source:c:\users\elian\documents\chemistry calc\chemistry calculator\solvemat.c
+	"periodic.h"
+
