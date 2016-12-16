@@ -1,5 +1,11 @@
-#include "periodic.h"
+/*Name: solveMat.c
+ *Contains: solveMat()
+ *Description: Solves a matrix (system of linear equations, i.e, chemical equations.)
+ *Notes: Does not work yet. Needs revision and a new algorithm.
+ */
 
+#include "periodic.h"
+#include <stdlib.h>
 float * solveMat(int *matPtr, int rows, int cols, char *elemOrder){
     /*Be sure the first row has a number in the very first column.
     There's gotta be one, and TECHNICALLY, there should be no way that a zero will be in position 0,0 due to parser
