@@ -12,7 +12,7 @@
  *-1 = Error
  */
 
-#include "periodic.h"
+#include "main.h"
 #include <stdio.h>
 #include <string.h>
 int defInput(char input[20]){

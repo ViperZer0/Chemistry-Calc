@@ -1,6 +1,6 @@
 #ifndef PERIODIC_H_INCLUDED
 #define PERIODIC_H_INCLUDED
-/*Contents of periodic.h:
+/*Contents of main.h:
  *1)Inclusions
  *2)Constant definitions
  *3)Type definitions

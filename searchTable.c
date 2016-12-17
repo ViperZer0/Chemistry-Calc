@@ -1,4 +1,4 @@
-#include "periodic.h"
+#include "main.h"
 #include <string.h>
 /*Name: searchTable.c
  *Contains: searchTable()

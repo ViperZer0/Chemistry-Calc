@@ -19,7 +19,7 @@
  */
 
 #include <string.h>
-#include "periodic.h"
+#include "main.h"
 #include <stdlib.h>
 
 int countElements(char *tempInput, char *elemOrder){

@@ -4,7 +4,7 @@
  *Notes: Does not work yet. Needs revision and a new algorithm.
  */
 
-#include "periodic.h"
+#include "main.h"
 #include <stdlib.h>
 float * solveMat(int *matPtr, int rows, int cols, char *elemOrder){
     /*Be sure the first row has a number in the very first column.

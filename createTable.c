@@ -10,12 +10,12 @@ Check the bookmark (//ISSUE) for a possible source of this issue.
  */ 
  
 
-#include "periodic.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 struct periodic *createTable(){
 
-	char format[] ="%d\t%3s\t" //This is the format code.
+	char format[]="%d\t%3s\t" //This is the format code.
 		"%20s\t%f\t"
 		"%100[^\t]\t%f\t"
 		"%d\t%f\t"
@@ -29,13 +29,17 @@ struct periodic *createTable(){
 	struct periodic *tablePtr = malloc(sizeof(*tablePtr)*num_elements); //Create a new array of structures
 	FILE *fp;
 	fp = fopen("periodictable.csv","r"); 
-	char buff[200];
-	char strcopy[220];//Extended to hold all of buff plus extra zeros.
+	if(fp==NULL){
+		printf("Error accessing periodictable.csv. Does the file exist in the right directory, or is this program unable to access it?\n");
+		return 0;	
+	}
+	char buff[200]="";
+	char strcopy[220]="";//Extended to hold all of buff plus extra zeros.
 	struct periodic * const initPtr = tablePtr; //Remember where the array starts!
 	int i,j, o;
 	for(i=0;i<num_elements;i++){//Repeat for all the elements of the periodic table.
 		if(fgets(buff,200,fp)){
-			o=1;//Move all the characters from buff into strcopy, inserting a 0 between two consecutive tabs (\t\t) //ISSUE
+			o=0;//Move all the characters from buff into strcopy, inserting a 0 between two consecutive tabs (\t\t) //ISSUE
 			for(j = 0; j < 200; j++){
 				if (j > 0){
 					if (buff[j] == '\t' && buff[j-1] == '\t' ){
@@ -45,8 +49,8 @@ struct periodic *createTable(){
 				}
 				strcopy[j+o] = buff[j];
 			}
-
-			sscanf(strcopy,format,&(tablePtr->num),&(tablePtr->sym),
+			int error;
+			error=sscanf(strcopy,format,&(tablePtr->num),&(tablePtr->sym),
 					&(tablePtr->name),&(tablePtr->weight),
 					&(tablePtr->config),&(tablePtr->neg),
 					&(tablePtr->rad),&(tablePtr->ion_rad),
@@ -59,6 +63,10 @@ struct periodic *createTable(){
 			      );
 			tablePtr++;
 		}
+		else{
+			printf("Something went wrong!\n");
+		}
 	}
+	fclose(fp);
 	return initPtr;
 }

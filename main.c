@@ -1,18 +1,12 @@
 #include <stdio.h>
-#include "periodic.h"
+#include "main.h"
 #include <stdlib.h>
 #include <string.h>
 
 int main()
 {
 	struct periodic *tablePtr;
-
 	tablePtr = createTable();
-	int i;
-	for(i=0;i<num_elements;i++){
-		displayData(tablePtr+i);	
-	}
-	
 	printf("INFORMATION SHUTFF HERE\n");
 	printf("(1)-View information about an element.\n");
 	printf("(2)-Balance a chemical equation.\n");

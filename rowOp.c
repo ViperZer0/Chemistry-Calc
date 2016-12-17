@@ -3,7 +3,7 @@
  *Description: Some generic row operation functions for the float matrix that will be solved.
  */
 
-#include "periodic.h"
+#include "main.h"
 #include <stdlib.h>
 
 void swapR(float *matPtr,int cols, int src, int dest, char *elemOrder){

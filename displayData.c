@@ -3,7 +3,7 @@
  *General Description: Displays all the relevant data about a given element.
  */
  
-#include "periodic.h"
+#include "main.h"
 
 void displayData(struct periodic *element){ //Display all the facts about an element!
 	printf("Atomic Number: %d\n",element->num);
