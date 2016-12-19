@@ -38,7 +38,10 @@ struct periodic  //Create a structure designed to create a model of the periodic
 
 };
 
-
+struct fraction{
+	int num; //Numerator
+	int den; //Denominator
+}
 //Buncha Declarations. Hold onto your butts.
 
 /*Name: createTable()
