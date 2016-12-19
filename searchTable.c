@@ -16,7 +16,6 @@ int searchTable(int mode, char input[20],struct periodic *table){
 	for(i=0;i<num_elements;i++){ //Compare the input string to the array.
 		if(mode==0) strcpy(match,(table+i)->sym); //If we're checking symbols, copy the symbol of the current element to string match
 		else strcpy(match,(table+i)->name); //If not, copy the entire name.
-		printf("%s\n",match);	
 		for(j = 0; match[j]; j++){//Convert either element symbol or name to lowercase.
 			match[j] = tolower(match[j]);
 		}

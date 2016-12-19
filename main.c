@@ -68,7 +68,7 @@ int main()
 		free(tempStr);
 		int *mtxPtr = parseEq(equation,rows,columns);
 		displayMatrix(mtxPtr,rows,columns,elemOrder);
-		solveMat(mtxPtr,rows,columns,elemOrder);
+		//solveMat(mtxPtr,rows,columns,elemOrder);
 		//displayMatrix(mtxPtr,rows,columns,elemOrder);
 
 		free(mtxPtr);
